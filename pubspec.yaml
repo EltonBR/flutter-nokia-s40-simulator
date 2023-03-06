@@ -73,6 +73,7 @@ flutter:
     - lib/assets/nokia-icons/symbols/header-indicators/battery-low.png
     - lib/assets/nokia-icons/symbols/header-indicators/gprs.png
     - lib/assets/nokia-icons/symbols/header-indicators/gprs-connected.png
+    - lib/assets/images/default-wallpaper.png
   fonts:
     - family: Nokia
       fonts:

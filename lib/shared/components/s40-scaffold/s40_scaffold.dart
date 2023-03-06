@@ -4,16 +4,18 @@ class S40Scaffold extends StatelessWidget {
   final Widget header;
   final Widget body;
   final Widget footer;
+  final Widget? background;
 
   S40Scaffold(
       {super.key,
       required this.header,
       required this.body,
-      required this.footer});
+      required this.footer,
+      this.background});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.black54,
+        backgroundColor: Color(0xFF333333),
         body: Center(
           child: ConstrainedBox(
               constraints: const BoxConstraints(
@@ -23,24 +25,18 @@ class S40Scaffold extends StatelessWidget {
                 maxWidth: 240,
               ),
               child: Container(
-                color: Colors.white,
-                child: Column(
+              color: Colors.white,
+                width: 240,
+                height: 320,
+                child: Stack(
                   children: [
-                    Stack(
-                      fit: StackFit.passthrough,
-                      children: [
-                        Positioned(top: 0, left: 0, child: header),
-                        Container(
-                          width: 240,
-                          height: 320,
-                          child: body,
-                        ),
-                        Positioned(
-                          bottom: 0,
-                          left: 0,
-                          child: footer,
-                        ),
-                      ],
+                    if (background != null) background!,
+                    body,
+                    Positioned(top: 0, left: 0, child: header),
+                    Positioned(
+                      bottom: 0,
+                      left: 0,
+                      child: footer,
                     )
                   ],
                 ),

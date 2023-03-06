@@ -29,13 +29,19 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return S40Scaffold(
+      background: Image.asset(
+        'lib/assets/images/default-wallpaper.png',
+        width: 240,
+        height: 320,
+        fit: BoxFit.fill,
+      ),
       header: const ScaffoldHeader(
         batteryLevel: 100,
         signalLevel: 100,
         alwaysOnline: true,
       ),
       body: Padding(
-        padding:  EdgeInsets.symmetric(horizontal: 2, vertical: 25),
+        padding: EdgeInsets.symmetric(horizontal: 2, vertical: 25),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [
