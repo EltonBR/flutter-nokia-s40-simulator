@@ -18,7 +18,7 @@ class ScaffoldHeader extends StatelessWidget {
         Image.asset(
           // TODO: retrieve from theme config file
             "lib/assets/nokia-icons/symbols/header-indicators/header-bg.png"),
-        Container(
+        SizedBox(
           height: 22, // TODO: Apply scale factor
           width: EnvVars.screenWidth,
           child: Row(

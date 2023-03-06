@@ -7,7 +7,7 @@ class S40Scaffold extends StatelessWidget {
   final Widget footer;
   final Widget? background;
 
-  S40Scaffold(
+  const S40Scaffold(
       {super.key,
       required this.header,
       required this.body,
@@ -16,7 +16,7 @@ class S40Scaffold extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xFF333333),
+        backgroundColor: const Color(0xFF333333),
         body: Center(
           child: ConstrainedBox(
               constraints: BoxConstraints(

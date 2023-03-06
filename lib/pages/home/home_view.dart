@@ -44,7 +44,7 @@ class _HomePageState extends State<HomePage> {
         alwaysOnline: true,
       ),
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 2, vertical: 25),
+        padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 25),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [

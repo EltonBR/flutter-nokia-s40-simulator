@@ -11,6 +11,5 @@ class HomeController extends Controller {
 
   @override
   void dispose() {
-    // TODO: implement dispose
   }
 }
