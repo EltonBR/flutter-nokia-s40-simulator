@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:s40_2011_simulator/constants/env_vars.dart';
 
 class ScaffoldFooter extends StatelessWidget {
   final String leftLabel;
@@ -17,7 +18,7 @@ class ScaffoldFooter extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 25,
-      width: 240,
+      width: EnvVars.screenWidth,
       color: Colors.blue,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 3),

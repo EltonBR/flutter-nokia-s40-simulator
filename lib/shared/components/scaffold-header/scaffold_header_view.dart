@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:s40_2011_simulator/constants/env_vars.dart';
 
 class ScaffoldHeader extends StatelessWidget {
   final int signalLevel;
@@ -15,11 +16,11 @@ class ScaffoldHeader extends StatelessWidget {
     return Stack(
       children: [
         Image.asset(
-          // TODO: file of theme
+          // TODO: retrieve from theme config file
             "lib/assets/nokia-icons/symbols/header-indicators/header-bg.png"),
         Container(
-          height: 22,
-          width: 240,
+          height: 22, // TODO: Apply scale factor
+          width: EnvVars.screenWidth,
           child: Row(
             children: [
               Image.asset(

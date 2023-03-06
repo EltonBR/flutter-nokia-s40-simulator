@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:s40_2011_simulator/constants/env_vars.dart';
 
 class S40Scaffold extends StatelessWidget {
   final Widget header;
@@ -18,16 +19,16 @@ class S40Scaffold extends StatelessWidget {
         backgroundColor: Color(0xFF333333),
         body: Center(
           child: ConstrainedBox(
-              constraints: const BoxConstraints(
-                minHeight: 320,
-                maxHeight: 320,
-                minWidth: 240,
-                maxWidth: 240,
+              constraints: BoxConstraints(
+                minHeight: EnvVars.screenheight,
+                maxHeight: EnvVars.screenheight,
+                minWidth: EnvVars.screenWidth,
+                maxWidth: EnvVars.screenWidth,
               ),
               child: Container(
               color: Colors.white,
-                width: 240,
-                height: 320,
+                width: EnvVars.screenWidth,
+                height: EnvVars.screenheight,
                 child: Stack(
                   children: [
                     if (background != null) background!,
