@@ -1,6 +1,9 @@
 # Flutter Nokia s40 Emulator
 flutter app to emulate nokia s40 system, based on nokia C2-01
 
+## Screenshots
+![home print](screenshot.png "Nokia S40 Home")
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
