@@ -1,4 +1,4 @@
 class EnvVars {
-  static double screenWidth = 240;
-  static double screenheight = 320;
+  static const double screenWidth = 240;
+  static const double screenheight = 320;
 }

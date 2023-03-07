@@ -26,9 +26,27 @@ class ScaffoldFooter extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            Text(leftLabel, style: textStyle),
-            Text(centerLabel, style: textStyle),
-            Text(rightLabel, style: textStyle),
+            Expanded(
+              child: Text(
+                leftLabel,
+                style: textStyle,
+                textAlign: TextAlign.start,
+              ),
+            ),
+            Expanded(
+              child: Text(
+                centerLabel,
+                style: textStyle,
+                textAlign: TextAlign.center,
+              ),
+            ),
+            Expanded(
+              child: Text(
+                rightLabel,
+                style: textStyle,
+                textAlign: TextAlign.end,
+              ),
+            ),
           ],
         ),
       ),

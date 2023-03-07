@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:s40_2011_simulator/pages/home/home_controller.dart';
 import 'package:s40_2011_simulator/shared/components/s40-scaffold/s40_scaffold.dart';
-import 'package:s40_2011_simulator/shared/components/scaffold-footer/scaffold_footer_view.dart';
-import 'package:s40_2011_simulator/shared/components/scaffold-header/scaffold_header_view.dart';
+import 'package:s40_2011_simulator/shared/components/scaffold_footer/scaffold_footer_view.dart';
+import 'package:s40_2011_simulator/shared/components/scaffold_header/scaffold_header_view.dart';
 
 import '../../constants/env_vars.dart';
 
@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
-    _controller = HomeController(() => setState(() {}));
+    _controller = HomeController(() => setState(() {}), context);
     super.initState();
   }
 
@@ -38,23 +38,21 @@ class _HomePageState extends State<HomePage> {
         height: EnvVars.screenheight,
         fit: BoxFit.fill,
       ),
-      header: const ScaffoldHeader(
-        batteryLevel: 100,
-        signalLevel: 100,
-        alwaysOnline: true,
-      ),
+      onKeyEvent: (rawKey) => _controller.handleKeypress(rawKey),
+      header: const ScaffoldHeader(),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 25),
+        padding: const EdgeInsets.symmetric(horizontal: 2),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [
             Text("VIVO"),
             Text("05/03/2023"),
+            TextField(),
           ],
         ),
       ),
       footer: const ScaffoldFooter(
-        leftLabel: 'Ir para',
+        leftLabel: 'Go to',
         centerLabel: 'Menu',
         rightLabel: 'Camera',
       ),

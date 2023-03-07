@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:s40_2011_simulator/pages/home/home_view.dart';
+import 'package:s40_2011_simulator/pages/menu/menu_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
       home: const HomePage(),
       routes: {
         '/home': (context) => const HomePage(),
+        "/menu": (context) => const MenuPage()
       },
       debugShowCheckedModeBanner: false,
     );
