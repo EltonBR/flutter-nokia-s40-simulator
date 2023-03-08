@@ -14,11 +14,11 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  late HomeController _controller;
+  late HomePageController _controller;
 
   @override
   void initState() {
-    _controller = HomeController(() => setState(() {}), context);
+    _controller = HomePageController(() => setState(() {}), context);
     super.initState();
   }
 

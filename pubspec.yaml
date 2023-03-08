@@ -74,6 +74,7 @@ flutter:
     - lib/assets/nokia-icons/symbols/header-indicators/gprs.png
     - lib/assets/nokia-icons/symbols/header-indicators/gprs-connected.png
     - lib/assets/images/default-wallpaper.png
+    - lib/assets/nokia-icons/menu/message.png
   fonts:
     - family: Nokia
       fonts:

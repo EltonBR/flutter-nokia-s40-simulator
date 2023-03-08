@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:s40_2011_simulator/constants/keymap.dart';
 import 'package:s40_2011_simulator/core/controller.dart';
 
-class HomeController extends Controller {
+class HomePageController extends Controller {
   final BuildContext context;
-  HomeController(setStateFn, this.context) : super(setStateFn);
+  HomePageController(setStateFn, this.context) : super(setStateFn);
 
   @override
   void dispose() {}
