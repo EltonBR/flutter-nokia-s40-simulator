@@ -1,4 +1,4 @@
-# Flutter Nokia s40 Emulator
+# Flutter Nokia s40 Simulator
 flutter app to emulate nokia s40 system, based on nokia C2-01
 
 ## Screenshots
